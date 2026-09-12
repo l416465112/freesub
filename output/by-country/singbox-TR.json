@@ -27,18 +27,9 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
-      "server": "195.162.69.203",
-      "server_port": 8443,
-      "uuid": "953358cb-82ba-4296-960d-6d2ec3468f4c",
-      "tls": {
-        "enabled": true,
-        "server_name": "195-162-69-203.sslip.io",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
+      "server": "app.life-pro.ir",
+      "server_port": 8082,
+      "uuid": "79f98593-6a21-4783-a425-3d5609a79df1"
     },
     {
       "type": "selector",

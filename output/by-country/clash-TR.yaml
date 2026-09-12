@@ -18,15 +18,11 @@ proxies:
   servername: sync-bridge.org
   client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: 195.162.69.203
-  port: 8443
+  server: app.life-pro.ir
+  port: 8082
   udp: true
   type: vless
-  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
-  tls: true
-  servername: 195-162-69-203.sslip.io
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 79f98593-6a21-4783-a425-3d5609a79df1
 proxy-groups:
 - name: PROXIES
   type: select
