@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe
-  server: 89.125.96.74
+  server: 89.125.96.75
   port: 2053
   udp: true
   type: vless
@@ -13,40 +13,22 @@ proxies:
   tls: true
   servername: wss.zazazuza.ru
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: wss.zazazuza.ru
-- name: 🇧🇾 白俄罗斯 (Belarus) 02 - xiaohe
-  server: 172.67.223.194
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1aa96574-c28b-4ee9-855d-ebdbbf1f7e90
-  tls: true
-  servername: aSSETS-DISTRibuTIon-m13-3.tAiwAN1912.Qzz.io
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ED3ZQPu7lqyeDGD58KabZ
-    headers:
-      Host: asSEtS-dIsTRIbUTIOn-M13-3.taiwAn1912.QZz.iO
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe
-  - 🇧🇾 白俄罗斯 (Belarus) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe
-  - 🇧🇾 白俄罗斯 (Belarus) 02 - xiaohe
 rules:
 - MATCH,PROXIES
