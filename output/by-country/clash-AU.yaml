@@ -5,20 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
-  server: 104.18.155.229
+  server: aksai.org
   port: 443
   udp: true
-  type: vless
-  uuid: 42026ed0-7d74-4585-8e46-0fe6aa4d665a
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: www.genflix.co.id.r3xxe.eu.cc
+  servername: aksai.org
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /au-do
+    path: /linkvws
     headers:
-      Host: www.genflix.co.id.r3xxe.eu.cc
+      Host: aksai.org
 - name: 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
   server: vpn-au-001.fastervpn.world
   port: 443
